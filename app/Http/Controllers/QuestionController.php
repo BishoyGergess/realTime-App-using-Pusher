@@ -53,6 +53,6 @@ use Symfony\Component\HttpFoundation\Response;
     {
         
         $question->delete();
-        return \response(null,Response::HTTP_NO_CONTENT);
+        return response(null,Response::HTTP_NO_CONTENT);
     }
 }
