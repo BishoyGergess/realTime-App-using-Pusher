@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Likes;
+use App\Like;
 use Illuminate\Http\Request;
 
-class LikesController extends Controller
+class LikeController extends Controller
 {
     /**
      * Display a listing of the resource.
