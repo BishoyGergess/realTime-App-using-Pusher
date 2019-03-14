@@ -7,7 +7,16 @@ use App\Reply;
 use Illuminate\Http\Request;
 
 class LikeController extends Controller
-{   //'user_id'=>\auth()->id()
+{   /**
+    * Create a new AuthController instance.
+    *
+    * @return void
+    */
+   public function __construct()
+   {
+       $this->middleware('JWT');
+   }
+    //'user_id'=>\auth()->id()
     public function likeIt(Reply $reply){
         $reply->like()->create(['user_id'=> '1']);
     }
