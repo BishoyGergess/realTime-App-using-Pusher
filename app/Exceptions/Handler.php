@@ -64,8 +64,9 @@ class Handler extends ExceptionHandler
         }
         else if($exception instanceOf JWTException){
             return \response(['error'=>'Token is not provided'], 400);
-        }
+        }else{
 
         return parent::render($request, $exception);
+        }
     }
 }
