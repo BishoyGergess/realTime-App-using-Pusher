@@ -14,6 +14,7 @@ import Vuetify from 'vuetify'
 Vue.use(Vuetify)
 import User from '../js/components/Helpers/User'
 window.User = User
+
 /**
  * The following block of code may be used to automatically register your
  * Vue components. It will recursively scan this directory for the Vue
@@ -28,7 +29,7 @@ window.User = User
 
 Vue.component('app-home',require('./components/AppHome.vue').default);
 import router from './Router/router'
-import { userInfo } from 'os';
+
 /**
  * Next, we will create a fresh Vue application instance and attach it to
  * the page. Then, you may begin adding components to this application
